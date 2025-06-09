@@ -1,4 +1,4 @@
-#🏁 Corrida de Processos no Terminal
+# 🏁 Corrida de Processos no Terminal
 Este projeto é uma simulação visual e divertida de escalonamento de processos, utilizando as políticas FIFO e Round Robin. Cada processo é representado por um animal que "corre" no terminal, mostrando sua barra de progresso até a conclusão.
 
 🎮 Como funciona
@@ -8,7 +8,7 @@ FIFO (First In, First Out): os processos são executados na ordem em que chegam,
 
 Round Robin: os processos são executados em rodadas com um quantum de 1 segundo. Cada processo recebe tempo de CPU por turnos até todos serem concluídos.
 
-#🐢🐇🐍 Participantes
+# 🐢🐇🐍 Participantes
 Cada processo tem um nome de animal e um tempo aleatório de execução entre 5 e 14 unidades de tempo:
 
 Tartaruga
@@ -21,7 +21,7 @@ Cobra
 
 Elefante
 
-#🖥️ Visual
+# 🖥️ Visual
 Durante a execução, uma barra de progresso no terminal mostra o andamento de cada processo. Ao final, é exibido o processo que terminou mais rápido.
 
 #📦 Compilação
@@ -37,7 +37,7 @@ Compilador C (GCC)
 
 Terminal compatível com códigos ANSI (como bash)
 
-#📚 Conceitos abordados
+# 📚 Conceitos abordados
 Simulação de escalonamento de processos
 
 FIFO vs Round Robin
