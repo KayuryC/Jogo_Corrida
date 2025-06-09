@@ -30,6 +30,7 @@ void inicializar_processos() {
     }
 }
 
+//imprime a barra de processos
 void mostrar_barras() {
     for (int i = 0; i < NUM_PROCESSOS; i++) {
         printf("%s [", processos[i].nome);
@@ -43,9 +44,9 @@ void mostrar_barras() {
 }
 
 void limpar_terminal() {
-    printf("\033[H\033[J"); // Limpa o terminal (codigo ANSI)
+    printf("\033[H\033[J"); //limpa o terminal (codigo ANSI)
 }
-
+//processo pra fifo
 void fifo() {
     printf("\nEscalonamento FIFO (First In, First Out)\n");
     for (int i = 0; i < NUM_PROCESSOS; i++) {
@@ -61,7 +62,7 @@ void fifo() {
         printf("\nProcesso %s concluido!\n", processos[i].nome);
     }
 }
-
+//processo pra round robin
 void round_robin() {
     printf("\nEscalonamento Round Robin (Quantum: %d segundo(s))\n", QUANTUM);
     int todosConcluidos = 0;
@@ -113,7 +114,7 @@ int main() {
     } else if (escolha == 2) {
         round_robin();
     } else {
-        printf("Escolha invalida! Por favor, digite 1 ou 2.\n");
+        printf("Escolha invalida! Por favor digite 1 ou 2.\n");
         return 1;
     }
 
